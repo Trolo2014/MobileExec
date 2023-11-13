@@ -1,6 +1,13 @@
 while wait() do end
 if game.PlaceId ~= 3237168 then
 
+game.StarterGui:SetCore("SendNotification", {
+Title = "Wave Hub Wrong Game Detected";
+Text = "Teleporting to OPL";
+Duration = 10;
+})
+
+wait(2.5)
 for i,v in pairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
 if type(v) == "table" and v.id ~= game.JobId then
 game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, v.id)
