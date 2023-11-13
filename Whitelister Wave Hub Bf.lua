@@ -2,9 +2,9 @@ while wait() do end
 if game.PlaceId ~= 3237168 then
 
 game.StarterGui:SetCore("SendNotification", {
-Title = "Wave Hub Wrong Game Detected";
+Title = "Wave Hub, Wrong Game Detected";
 Text = "Teleporting to OPL";
-Duration = 10;
+Duration = 3;
 })
 
 wait(2.5)
