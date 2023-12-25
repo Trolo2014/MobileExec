@@ -1,4 +1,4 @@
---while wait() do end
+while wait() do end
 
 if game.PlaceId ~= 3237168 then
 game.StarterGui:SetCore("SendNotification", {
