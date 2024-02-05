@@ -1,4 +1,4 @@
----repeat task.wait() until _G.AntiSpam = true
+repeat task.wait() until _G.AntiSpam = true
 
 if game.PlaceId ~= 3237168 then
 game.StarterGui:SetCore("SendNotification", {
