@@ -1,5 +1,4 @@
-game.Players.LocalPlayer:Kick("No")
-repeat task.wait() until _G.AntiSpam = true
+while _G.AntiSpam == false do wait() game.Players.LocalPlayer:Kick("No") end
 
 if game.PlaceId ~= 3237168 then
 game.StarterGui:SetCore("SendNotification", {
