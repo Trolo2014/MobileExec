@@ -1,4 +1,4 @@
-while _G.AntiSpam == false do wait() game.Players.LocalPlayer:Kick("No") end
+while _G.AntiSpam == false do wait() game.Players.LocalPlayer:Kick("Discountinued") end
 
 if game.PlaceId ~= 3237168 then
 game.StarterGui:SetCore("SendNotification", {
