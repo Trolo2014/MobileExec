@@ -1,5 +1,11 @@
 --while _G.AntiSpam == nil do wait() game.Players.LocalPlayer:Kick("Use Hub Script Not Whitelister Again Stupid") end
 
+
+_G.DiscordAccountId = _G.DiscordID
+
+
+
+
 if game.PlaceId ~= 3237168 then
 game.StarterGui:SetCore("SendNotification", {
 Title = "Wave Hub, Wrong Game Detected";
