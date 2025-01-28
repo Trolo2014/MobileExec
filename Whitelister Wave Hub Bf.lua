@@ -7,11 +7,7 @@ Text = "Teleporting to OPL";
 Duration = 3;
 })
 wait(2.5)
-for i,v in pairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/3237168/servers/Public?sortOrder=Asc&limit=100")).data) do
-if type(v) == "table" and v.id ~= game.JobId then
-game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, v.id)
-end end
-
+game:GetService("TeleportService"):Teleport(3237168)
 end
 
 repeat wait() until game.PlaceId == 3237168
