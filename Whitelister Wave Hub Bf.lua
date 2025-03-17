@@ -1,3 +1,4 @@
+break
 if game.PlaceId ~= 3237168 then
 game.StarterGui:SetCore("SendNotification", {
 Title = "Wave Hub, Wrong Game Detected";
